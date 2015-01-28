@@ -1,0 +1,245 @@
+body {
+b order: solid 1px red;
+}
+/* -------------------------- header start -------------------------- */
+
+
+#topNavBar {
+padding: 0 0;
+margin: 0 0;
+}
+
+#logoImage {
+width: 55px;
+height: 42px;
+}
+
+
+#logoBig {
+float: left;
+padding: 5px 15px 0  5px ;
+}
+
+#linkToSite: active {
+text-decoration: none;
+}
+
+#linkToSite:  link  {
+text-decoration: none;
+}
+#linkToSite: visited  {
+text-decoration: none;
+}
+#linkToSite:  hover {
+text-decoration: none;
+}
+
+#myName {
+color: #C2C2C2;
+padding: 15px 5px 0  5px ;
+}
+
+#siteName {
+width: 180px;
+float: left;
+}
+
+#mainHeader {
+padding: 10px 25px 0 50px;
+height: 250px;
+background-image: url("../images/green_green.jpg");
+}
+
+#mainHeader p{
+font-size:21px;
+font-weight:200;
+}
+
+#contactMe div p{
+font-weight: bold;
+color: #DDBBAA;
+padding-top: 5px;
+padding-left: 5px;
+}
+
+#contactMe div{
+    position: absolute;
+    right: 0px;
+    width: 115px;
+height: 30px;  
+}
+
+#contactMe{
+height: 30px;  
+align: right;
+margin-top: 50px;
+background-color: #025D79;
+}
+
+#contactLink:link{
+color: #C9C9B0;
+text-decoration: none;
+}
+
+#contactLink:visited{
+color: #C9C9B0;
+text-decoration: none;
+}
+
+#contactLink:hover{
+color: #C77B38;
+text-decoration: none;
+}
+
+#bannerTitle{
+color: #333333;
+font-size:63px;
+font-weight:200;
+}
+
+#breadcrums {
+padding: 0 0;
+
+}
+
+/* -------------------------- header end -------------------------- */
+
+
+/*--------------------- footer start --------------------------- */
+
+#preFooter {
+background-color: #3D494C  ; /*#025D79;*/
+height: 50px;
+}
+
+#footerSiteMap{
+padding-top: 3px;
+color: #01824A;
+background-color: #012D3A; /*#013C2C;*/
+height: 150px;
+}
+
+#SiteMapContainer {
+ margin-left: auto;
+    margin-right: auto;
+width: 70%;
+}
+
+#SiteMapContainer div{
+padding: 5px;
+width: 20%;
+b order: solid 1px red;
+float: left;
+}
+
+.SiteMapSubTitle {
+font-size: smaller;
+padding-left: 10px;
+}
+
+
+.SiteMapSubTitle:active {
+color: #3FADD5;
+text-decoration: none;
+}
+
+.SiteMapSubTitle:link {
+color: #2A6496;
+text-decoration: none;
+}
+
+
+.SiteMapSubTitle:visited{
+color: #2A6496;
+text-decoration: none;
+}
+.SiteMapSubTitle:hover {
+color: #C77B38;
+text-decoration: none;
+}
+
+#footer{
+color: #CCCCCC;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 10px;
+background-color: #2B2B2B  ;/*#005566;*/
+height: 30px;
+}
+
+#copyrightStatement   {
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    }
+
+#stayConnected {
+margin-left: auto;
+marging-right: auto;
+width: 70%;
+}
+
+
+.footerM:link{
+color: #01824A;
+}
+
+.footerM:visited{
+color: #028D64;
+text-decoration: none;
+}
+
+.footerM:hover{
+color: #C77B38;
+text-decoration: none;
+}
+
+/*--------------------- footer end --------------------------- */
+
+
+#businessCard {
+padding-left: 5%;
+padding-bottom: 20px;
+}
+
+#seeMore {
+b order: solid 2px red;
+m argin-top:500px;
+height: 100px;
+background-image: url("../images/code1.png");
+ opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+
+#content3 {
+height: 100px;
+}
+
+
+#envelopButton contactLink {
+margin: 0 0 0 0;
+padding: 0 0 0 0 ;
+width: 200px;
+border:  solid 1px red;
+}
+
+
+.glyphicon navbar-toggle glyphicon-envelope{
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+}
+
+#icon {
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+}
+
+textarea {
+    resize: none;
+}
+
+
+#contactMeContent{
+padding-bottom: 20px;
+}
