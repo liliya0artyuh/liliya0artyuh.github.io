@@ -30,7 +30,8 @@
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="AboutMe.html">About Me</a></li>
         <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="GitHub.html">GitHub</a></li>
+         <li><a href="https://github.com/liliya0artyuh">GitHub</a></li>
+       <!-- <li><a href="GitHub.html">GitHub</a></li>-->
         <li><a href="Services.html">Services</a></li>
       </ul>
     </div>
@@ -39,11 +40,12 @@
 
 <!--               navigation bar section  end            -->
 
- <a href="ContactMe.html"><button id="envelopButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#contactLink">
-<span id="icon" class="glyphicon glyphicon-envelope"></span>
-        </button></a>
+<!--               contact me section  start            -->
+
          <div id="contactMe">
-<div class="collapse navbar-collapse"><p><a id="contactLink" href="ContactMe.html">Contact me</a></p></div></div>
+<div><p><a id="contactLink" href="ContactMe.html">Contact me</a></p></div></div>
+</div>
+<!--               contact me section  end            -->
 
 <!--               title header section  start            -->
 <div id="mainHeader">
@@ -52,37 +54,20 @@
 </div>
 <!--               title header section  end            -->
 
-<!--               breadcrums section  start            -->
-    <div id="breadcrums" class="container-fluid">
-      <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Private</a></li>
-        <li><a href="#">Pictures</a></li>
-        <li class="active">Vacation</li>
-      </ol>
-    </div>
-<!--               breadcrums section  end            -->
 <!--               header section   end           -->
 
 
 <!--                 content 1 start                -->
-<div class="container">
-<div class="row">
-  <div class="col-md-4">
-    <h2>Purpose</h2>
-    <p>This site is a digital portfolio of my work.</p>
-  </div>
-  <div class="col-md-4">
-    <h2>Tools</h2>
-    <p>Tools used to create this website: </p>
-    <p>HTML, CSS, Bootstrap, jQuery</p>
-  </div>
-  <div class="col-md-4">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
-    and the most populous metropolitan area in the world.</p>
-  </div>
-</div>
+<div id="welcomeDiv" class="container">
+    <div id="welcomeTitle"><h2>Welcome to my Portfolio Website</h2></br> <p>Here you can find information about:</p></div>
+    <div id="welcomeList">
+    <ul >
+    <li>me,</li>
+    <li>my work, and </li>
+    <li>my services.</li>
+   </ul></p>
+   </div>
+
 </div>
 <!--                 content 1 end                -->
 <!--                 content 2 start                -->
@@ -91,12 +76,62 @@
 <!--                 content 2 end                -->
 <!--                 content 3 start                -->
 <div id="content3" class="container">
+  <h2>Featured Work</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/paymentSourceProjectCollage.png" alt="Payment Source Project">
+    </div>
+
+    <div class="item">
+      <img src="images/technicalWritingProjectCollage.png" alt="Technical Documentation">
+    </div>
+
+    <div class="item">
+      <img src="images/webDevelopmentProjectCollage.png" alt="Web Development">
+    </div>
+
+    <div class="item">
+      <img src="images/financialManagementProjectCollage.png" alt="Java Project">
+    </div>
+
+       <div class="item">
+	      <img src="images/dataDevelopmentProjectCollage.png" alt="Data and Database Development">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 </div>
 <!--                 content 3 end                -->
 
 <!--                 footer start                -->
 <div id="preFooter" >
-<div id="stayConnected">Stay Connected:</div></div>
+<div id="stayConnected">
+
+<div id="stayConnectedText" class="collapse navbar-collapse" >Stay Connected:</div>
+<a href="https://www.facebook.com/liliya.artyukh" id="socialMediaIconsF"><div class="SMicon"></div></a>
+<a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" id="socialMediaIconsL"><div class="SMicon"><img id="linkedIn" src="images/linkedIn_darkBlue.png"></div></a>
+<a href="https://plus.google.com/u/0/" id="socialMediaIconsG"><div  class="SMicon"><img src="images/google_darkBlue.png"></div></a>
+</div></div>
 <div id="footerSiteMap" class="collapse navbar-collapse">
 <div id="SiteMapContainer">
 <div>
@@ -150,7 +185,12 @@
 </ul>
 </div>
 </div></div>
-<div id="footer" ><div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div></div>
+<div id="footer" ><div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div>
+<div id="tools">
+<p>Tools used to create this website:<br/>
+HTML, CSS, Bootstrap, jQuery</p>
+    </div>
+    </div>
 <!--                 footer end                -->
 
 </body>
