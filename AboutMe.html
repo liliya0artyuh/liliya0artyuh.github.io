@@ -1,3 +1,5 @@
+<!--  Aboutme.html ; Liliya Artyukh ;  page that provides information about me             -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="scripts/styles.css">
 </head>
 
-<body>
+<body onload="main();">
 
 <!--               header section  start            -->
 <!--               navigation bar section  start            -->
@@ -30,7 +32,7 @@
         <li><a href="index.html">Home</a></li>
         <li class="active"><a href="AboutMe.html">About Me</a></li>
         <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="GitHub.html">GitHub</a></li>
+        <li><a href="https://github.com/liliya0artyuh">GitHub</a></li>
         <li><a href="Services.html">Services</a></li>
       </ul>
     </div>
@@ -48,56 +50,151 @@
 </div>
 <!--               title header section  end            -->
 
-<!--               breadcrums section  start            -->
-    <div id="breadcrums" class="container-fluid">
-      <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Private</a></li>
-        <li><a href="#">Pictures</a></li>
-        <li class="active">Vacation</li>
-      </ol>
-    </div>
-<!--               breadcrums section  end            -->
 <!--               header section   end           -->
 
 
 <!--                 content 1 start                -->
-<div class="container-fluid">
-<div class="row">
-  <div class="col-md-4">
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
-    <p>It is the most populous city in the United Kingdom,
-    with a metropolitan area of over 13 million inhabitants.</p>
+<div id="AboutMeSection">
+<div id="AboutMeContainer">
+  <div class="photoDiv" class="col-md-4">
+  <img id="MyPhoto" src="images/myphoto.png">
   </div>
-  <div class="col-md-4">
-    <h2>Paris</h2>
-    <p>Paris is the capital and most populous city of France.</p>
+
+
+  <div id="shortBio" class="col-md-8">
+     <h2>Liliya Artyukh</h2>
+       <p>Mature Centennial College Software Engineering student in 3rd year of program</p>
+    <p>University educated, former business founder embarking on career change</p>
+    <br />
+    <br />
+        <a id="resume" href="images/LiliyaArtyukhresumeJan2015.doc"><h6>Download my resume</h6></a>
   </div>
-  <div class="col-md-4">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
-    and the most populous metropolitan area in the world.</p>
-  </div>
+
 </div>
 </div>
 <!--                 content 1 end                -->
 
+<div class="sectionSeparator"></div>
+
+<!--                 content 2 start                -->
+<div id="educationSection">
+<h2>Education</h2>
+<div id="educationContainer">
+<div class="educationDivs" ><a id="univInfo" href="http://www.ablaikhan.kz/en/our-university/facultets-and-departments/faculty-of-foreign-languages.html" ><img  src="images/univ_front.png"></a></div>
+<div class="educationDivsMiddle" ></div>
+<div class="educationDivs" ><a id="collegeInfo" href="http://www.centennialcollege.ca/programs-courses/full-time/software-engineering-technology-coop/" ><img src="images/college_front.png"></a></div>
+</div><!-- end of educational container   -->
+</div><!-- end of educational section   -->
+<!--                 content 2 end                -->
+
+<div class="sectionSeparator"></div>
+
+<!--                 content 3 start                -->
+<div id="experienceSection">
+   <h2>Related Experience</h2>
+   <div id="hiddenImages">
+   <div class="hiddenDetails" id="javaDetails"><img src="images/javadetails.png"></div>
+   <div  class="hiddenDetails" id="dataDetails"><img src="images/datadetails.png"></div>
+   <div  class="hiddenDetails" id="docDetails"><img src="images/docdetails.png"></div>
+   <div class="hiddenDetails"  id="webDetails"><img src="images/webdetails.png"></div>
+   <div class="hiddenDetails"  id="testDetails"><img src="images/testdetails.png"></div>
+   <div class="hiddenDetails"  id="csharpDetails"><img src="images/csdetails.png"></div>
+</div>
+<div id="experienceContainer">
+
+<div class="experienceRow">
+
+<div class="experienceDiv"><a id="csharpEx"><img class="sizeOfIconsSM" src="images/CSlogo.png"></a></div>
+
+  <div class="educationDivsMiddle" ></div>
+<div class="experienceDiv"><a id="dataEx"><img class="sizeOfIconsSM" src="images/datalogo.png"></a></div>
+
+  <div class="educationDivsMiddle" ></div>
+<div ><a id="webEx"><img class="sizeOfIconsSM" src="images/weblogo.png"></a></div>
+</div>
+
+<div class="experienceRow">
+<div class="experienceDiv"><a id="javaEx"><img class="sizeOfIconsSM" src="images/javalogo.png"></a></div>
+  <div class="educationDivsMiddle" ></div>
+<div class="experienceDiv" ><a id="docEx"><img class="sizeOfIconsSM" src="images/doclogo.png"></a></div>
+  <div class="educationDivsMiddle" ></div>
+<div class="experienceDiv" ><a id="testEx"><img class="sizeOfIconsSM" src="images/testlogo.png"></a></div>
+</div>
+
+</div>
+</div>
+<!--                 content 3 end                -->
 
 <!--                 footer start                -->
-<div id="preFooter" >prefooter</div>
-<div id="footerMenu"
-><a class="footerM" href="index.html">Home</a
-> | <a class="footerM" href="webDesign1.html">Web Interface</a
-> | <a class="footerM" href="webDesign2.html">Web Applications</a
-> | <a class="footerM" href="siteMap.html">Sitemap</a
-> | <a  class="footerM" href="credits.html">Credits</a
-> | <a  class="footerM" href="mailto:liliya0artyukh@gmail.com">Contact me</a
-></div>
-<div id="footer" ><div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div></div>
+<!--      pre footer start       -->
+<div id="preFooter" >
+<div id="stayConnected">
+<div id="stayConnectedText" class="collapse navbar-collapse" >Stay Connected:</div>
+<div class="SMicon"><a id="socialMediaIconsF" href="https://www.facebook.com/liliya.artyukh" ><img src="images/faceBook_darkBlue.png"></a></div>
+<div class="SMicon"><a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" id="socialMediaIconsL"><img id="linkedIn" src="images/linkedIn_darkBlue.png"></a></div>
+<div  class="SMicon"><a href="https://plus.google.com/u/0/" id="socialMediaIconsG"><img src="images/google_darkBlue.png"></a></div>
+</div></div>
+<!--      pre footer end       -->
+<!--      site map start       -->
+<div>
+<div id="footerSiteMap" class="collapse navbar-collapse">
+<div id="SiteMapContainer">
+<div>
+<ul style="list-style-type:none">
+ <li><a class="footerM" href="AboutMe.html">About me</a></li>
+ <li ><a class="SiteMapSubTitle" href="#">Education</a></li>
+ <li><a class="SiteMapSubTitle" href="#">Experience</a></li>
+</ul>
+</div>
+<div>
+<ul style="list-style-type:none">
+ <li><a class="footerM" href="Portfolio.html">Portfolio</a></li>
+ <li  ><a class="SiteMapSubTitle" href="#">Java</a></li>
+ <li  ><a class="SiteMapSubTitle" href="#">C#</a></li>
+ <li  ><a class="SiteMapSubTitle" href="#">Web</a></li>
+  <li  ><a class="SiteMapSubTitle" href="#">Data</a></li>
+ <li ><a class="SiteMapSubTitle" href="#">Technical Documentation</a></li>
+</ul>
+</div>
+<div>
+<ul style="list-style-type:none">
+ <li><a class="footerM" href="Services.html">Services</a></li>
+ <li  ><a class="SiteMapSubTitle" href="#">Data and Reporting</a></li>
+ <li  ><a class="SiteMapSubTitle" href="#">Database Development</a></li>
+ <li  ><a class="SiteMapSubTitle" href="#">Programming</a></li>
+  <li ><a  class="SiteMapSubTitle" href="#">Testing</a></li>
+  <li ><a  class="SiteMapSubTitle" href="#">Project Management</a></li>
+</ul>
+</div>
+<div>
+<ul style="list-style-type:none">
+ <li><a class="footerM" href="https://github.com/liliya0artyuh">GitHub</a></li>
+</ul>
+</div>
+<div>
+<ul style="list-style-type:none">
+ <li><a class="footerM" href="ContactMe.html">Contact me</a></li>
+ <li  ><a  class="SiteMapSubTitle" href="#">E-mail</a></li>
+ <li ><a  class="SiteMapSubTitle" href="#">Phone</a></li>
+ <li ><a  class="SiteMapSubTitle" href="#">LinkedIn</a></li>
+</ul>
+</div></div></div>
+<div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div>
+</div>
+<!--     sitemap start       -->
+<!--      tools start       -->
+<div id="footer" >
+<div id="tools">
+<p>Tools used to create this website:<br/>
+HTML, CSS, Bootstrap, jQuery</p>
+</div>
+<!--    tools start       -->
+</div>
 <!--                 footer end                -->
 
 </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="scripts/portfolioJQuery.js"></script>
 </html>

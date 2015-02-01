@@ -1,7 +1,20 @@
+/*  styles.css ; Liliya Artyukh ;  page that has css styles for all pages on this website            */
+
+
+/*-------------------- global style start------------------*/
 body {
 b order: solid 1px red;
 }
-/* -------------------------- header start -------------------------- */
+
+
+.sectionSeparator{
+ clear: both;
+height: 10px;
+background-color: grey;
+}
+/*-------------------- global style start------------------*/
+
+/* ------------------------------------------------------------- header start -------------------------- */
 
 
 #topNavBar {
@@ -100,29 +113,30 @@ text-decoration: none;
 color: #333333;
 font-size:63px;
 font-weight:200;
-}
+} 
 
 #breadcrums {
 padding: 0 0;
 
 }
 
-/* -------------------------- header end -------------------------- */
+/* -------------------------------------------------------------------------------------- header end -------------------------- */
 
 
-/*--------------------- footer start --------------------------- */
+/*--------------------------------------------------------------------------------------- footer start --------------------------- */
 
 #preFooter {
-b ackground-color: black; #3D494C  ; /*#025D79;*/
+clear: both;
+background-color: black; #3D494C  ; /*#025D79;*/
 height: 60px;
-b order: solid 1px red; 
 }
 
-#stayConnected {
-b order: solid 1px red; 
+/*------------ STAY Connected div links  start - --------------*/
+#stayConnected { 
+b order: solid 1px red;
 margin-left: auto;
 marging-right: auto;
-width: 70%;
+width: 65%;
 }
 
 #stayConnected div{
@@ -131,33 +145,62 @@ float: left;
 
 #stayConnectedText{
 padding-top: 22px;
-color: #DDBBAA;
+color: #CCCCCC;
 }
 
-.socialMediaIcons{
-float: left;
-padding-top: 7px;
-padding-left: 5px;
-padding-right: 5px;
+.SMicon{
+width:48px;
+height:48px;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 5px;
+display: block;
+text-indent: -99999px;
 }
+
+#socialMediaIconsF:link {
+background: url("../images/faceBook_darkBlue.png");
+display: block;
+}
+#socialMediaIconsF:hover{
+background: url("../images/faceBook_darkBrown.png");
+background-position: 0 0;
+}
+#socialMediaIconsL:link{
+background-image: url("../images/linkedIn_darkBlue.png");
+display: block;
+}
+#socialMediaIconsL:hover{
+background-image: url("../images/linkedIn_darkBrown.png");
+background-position: 0 0;
+}
+#socialMediaIconsG:link{
+background-image: url("../images/google_darkBlue.png");
+display: block;
+}
+#socialMediaIconsG:hover{
+background-image: url("../images/google_darkBrown.png");
+background-position: 0 0;
+}
+/*------------ STAY Connected div links end- --------------*/
+
 
 #footerSiteMap{
 padding-top: 3px;
 color: #01824A;
-background-color: #012D3A; /*#013C2C;*/
+background-color: #012D3A; 
 height: 150px;
 }
 
 #SiteMapContainer {
  margin-left: auto;
-    margin-right: auto;
-width: 70%;
+ margin-right: auto;
+width: 65%;
 }
 
 #SiteMapContainer div{
 padding: 5px;
 width: 20%;
-b order: solid 1px red;
 float: left;
 }
 
@@ -166,18 +209,14 @@ font-size: smaller;
 padding-left: 10px;
 }
 
-
 .SiteMapSubTitle:active {
 color: #3FADD5;
 text-decoration: none;
 }
-
 .SiteMapSubTitle:link {
 color: #2A6496;
 text-decoration: none;
 }
-
-
 .SiteMapSubTitle:visited{
 color: #2A6496;
 text-decoration: none;
@@ -186,73 +225,84 @@ text-decoration: none;
 color: #C77B38;
 text-decoration: none;
 }
-
-#footer{
-color: #CCCCCC;
-  text-align: center;
-  font-size: 10px;
-  padding-top: 10px;
-background-color: #2B2B2B  ;/*#005566;*/
-height: 60px;
-}
-
-#copyrightStatement   {
-    p osition: absolute;
-    r ight: 0px;
-    width: 200px;
-    }
-
-
 .footerM:link{
 color: #01824A;
 }
-
 .footerM:visited{
 color: #028D64;
 text-decoration: none;
 }
-
 .footerM:hover{
 color: #C77B38;
 text-decoration: none;
 }
 
-/*--------------------- footer end --------------------------- */
+#copyrightStatement   {
+background-color: #012D3A; 
+color: #CCCCCC;
+  font-size: 10px;
+ text-align: center;
+    p osition: absolute;
+    r ight: 0px;
+    w idth: 200px;
+    }
 
+#footer{
+color: #ADADAD;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 10px;
+background-color: #2B2B2B  ;/*#005566;*/
+height: 40px;
+}
+/*--------------------------------------------------------------------------------- footer end --------------------------- */
 
+/*--------------------------------------------------------------------------------- content start --------------------------- */
+/*----contact me start---*/
 #businessCard {
 padding-left: 5%;
 padding-bottom: 20px;
 }
+#contactMeContent{
+padding-bottom: 20px;
+}
+/*----contact me end---*/
 
+/*----home page start---*/
 #seeMore {
 b order: solid 2px red;
 m argin-top:500px;
 height: 100px;
-background-image: url("../images/code1.png");
- opacity: 0.5;
-    filter: alpha(opacity=40);
+background-image: url("../images/code1.gif");
+ o pacity: 0.5;
+    f ilter: alpha(opacity=40);
     display: block;
 }
 
 
+#callToAction{
+    width: 151px;
+    height: 74px;margin-left: 15%;
+  background-image: url("../images/callToAction.gif") ;
+    b order: solid 2px red;
+    b ackground-color: yellow;
+    /* Rotate div */
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+    transform: rotate(20deg); /* Standard syntax */
+}
+
+
+.carousel-inner{
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+
+}
 #content3 {
-height: 500px;
+w idth: 700px;
+h eight: 700px;
 text-align: center;
-}
-
-
-#envelopButton contactLink {
-margin: 0 0 0 0;
-padding: 0 0 0 0 ;
-width: 200px;
-border:  solid 1px red;
-}
-
-
-.glyphicon navbar-toggle glyphicon-envelope{
-margin: 0 0 0 0;
-padding: 0 0 0 0;
 }
 
 #icon {
@@ -265,16 +315,11 @@ textarea {
 }
 
 
-#contactMeContent{
-padding-bottom: 20px;
-}
-
 #myCarousel{
 margin-top: 20px;
 margin-bottom: 20px;
 b order: solid 2px red;
 }
-
 
 #welcomeDiv{
 text-align: center;
@@ -293,39 +338,117 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.SMicon{
-width:48px;
-height:48px;
+/*---- home page end  ---*/
+
+
+/*---- about me start --*/
+#AboutMeSection{
+min-height: 320px;
+height: auto;
+margin-bottom: 20px;
+margin-top: 20px;
 }
-#socialMediaIconsF:link {
-background-image: url("../images/faceBook_darkBlue.png");
+#AboutMeContainer{
+margin-left: auto;
+marging-right: auto;
+width: 75%;
 }
-#socialMediaIconsF:active {
-background-image: url("../images/faceBook_darkBlue.png");
+#AboutMeContainer div{
+float:left;
 }
-#socialMediaIconsF:visited {
-background-image: url("../images/faceBook_darkBlue.png");
+#shortBio{
+text-align: left;
 }
-#socialMediaIconsF:hover{
-background-image: url("../images/faceBook_darkBrown.png");
+#MyPhoto{
+width: 270px;
+height: 324px;
 }
 
-#socialMediaIconsL:hover{
-background-image: url("images/faceBook_darkBlue.png");
+
+#educationSection{
+text-align: center;
+height: 380px;
+}
+#educationContainer{
+margin-left: auto;
+marging-right: auto;
+width: 75%;
+}
+#educationContainer div{
+margin-bottom: 10px;
+float: left;
+}
+.educationDivs educationDivsMiddle{
+m argin-top: 5px;
+d isplay: block;
+t ext-indent: -99999px;
+f loat:right;
+}
+.educationDivsMiddle{
+display: block;
+text-indent: -99999px;
+width: 50px;
+height: 10px;
+}
+.educationDivs{
+display: block;
+text-indent: -99999px;
+width: 418px;
+height: 313px;
+}
+#univInfo:link {
+background: url("../images/univ_front.png");
+display: block;
+}
+#univInfo:hover{
+background: url("../images/univ_back.png");
+background-position: 0 0;
+}
+#collegeInfo:link {
+background: url("../images/college_front.png");
+display: block;
+}
+#collegeInfo:hover{
+background: url("../images/college_back.png");
+background-position: 0 0;
 }
 
-#socialMediaIconsL:hover{
-background-image: url("images/faceBook_darkBlue.png");
+#experienceSection{
+background-color: #EDEDED;
+text-align: center;
+height: 620px;
+}
+#experienceContainer{
+margin-left: auto;
+marging-right: auto;
+width: 82%;
+}
+.experienceRow {
+float: left;
+display: block;
+}
+.experienceRow div{
+float: left;
+}
+/*---- about meend  ---*/
+/*--------------------------------------------------------------------------------- content end --------------------------- */
+
+
+
+.hiddenDetails {
+
+  display: none;
 }
 
-#socialMediaIconsG:hover{
-background-image: url("images/faceBook_darkBlue.png");
+#sideBar {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
 }
 
-#socialMediaIconsG:hover{
-background-image: url("images/faceBook_darkBlue.png");
+#sideBar:hover {
+    width: 300px;
 }
 
-#linkedIn:hover{
-background-image: url("images/faceBook_darkBlue.png");
-}
