@@ -356,6 +356,12 @@ width: 75%;
 #AboutMeContainer div{
 float:left;
 }
+
+#bioLiliya{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
 #shortBio{
 text-align: left;
 }
