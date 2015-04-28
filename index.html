@@ -6,14 +6,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="scripts/detectmobilebrowser.js" type="text/javascript"></script>
+  <script src="scripts/portfolioJQuery.js"></script>
     <link rel="stylesheet" href="scripts/html5reset-1.6.1.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="scripts/styles.css">
 </head>
 
-<body>
+<body onload="main();">
 
+  <div id="scriptcontainer">
+  <!-- scripts/detectmobilebrowser.js -->
+    <script src="" type="text/javascript"></script>
+    </div>
 <!--               header section  start            -->
 
 <!--               navigation bar section  start            -->
@@ -61,13 +65,12 @@
 
 <!--                 content 1 start                -->
 <div id="welcomeDiv" class="container">
-    <div id="welcomeTitle"><h2>Welcome to my Portfolio Website</h2></br> <p>Here you can find information about:</p></div>
+    <div id="welcomeTitle">
+    	<h2>Welcome to my Portfolio Website</h2>
+    	</br>
+    </div>
     <div id="welcomeList">
-    <ul >
-    <li>me,</li>
-    <li>my work, and </li>
-    <li>my services.</li>
-   </ul></p>
+    	<p>Building quality, user-friendly tools that provide convenience in daily tasks.</p>
    </div>
 </div>
 <!--                 content 1 end                -->
@@ -75,7 +78,11 @@
 
 <!--                 content 2 start                -->
 <div id="seeMore" class="container-fluid">
-<a href="Portfolio.html"><div id="callToAction"></div></a>
+	<a href="Portfolio.html">
+		<marquee  direction="right" scrolldelay="0"  >
+		<div id="callToAction"></div>
+		</marquee>
+	</a>
 </div>
 <!--                 content 2 end                -->
 
@@ -83,6 +90,8 @@
 <!--                 content 3 start                -->
 <div id="content3" class="container">
   <h2>Featured Work</h2>
+  <div class="row">
+   <div class="col-sm-6 col-sm-offset-3">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -107,7 +116,9 @@
       <img src="images/financialManagementProjectCollage.png" alt="Java Project">
     </div>
        <div class="item">
+       <a  href="https://www.facebook.com/liliya.artyukh" >
 	      <img src="images/dataDevelopmentProjectCollage.png" alt="Data and Database Development">
+	  	</a>
     </div>
   </div>
   <!-- Left and right controls -->
@@ -119,74 +130,106 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div><!--carousel container closed-->
+  				</div><!-- carousel end -->
+    			</div><!-- col end -->
+	</div><!-- row end -->
 </div><!--content 3 container closed-->
 <!--                 content 3 end                -->
 
 <!--                 footer start                -->
 <!--      pre footer start       -->
-<div id="preFooter" >
-<div id="stayConnected">
-<div id="stayConnectedText" class="collapse navbar-collapse" >Stay Connected:</div>
-<div class="SMicon"><a id="socialMediaIconsF" href="https://www.facebook.com/liliya.artyukh" ><img src="images/faceBook_darkBlue.png"></a></div>
-<div class="SMicon"><a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" id="socialMediaIconsL"><img id="linkedIn" src="images/linkedIn_darkBlue.png"></a></div>
-<div  class="SMicon"><a href="https://plus.google.com/u/0/" id="socialMediaIconsG"><img src="images/google_darkBlue.png"></a></div>
-</div></div>
+<div id="preFooter" class="container-fluid">
+		<div id="stayConnected" class="row">
+			<div id="stayConnectedText" class="col-md-6  col-sm-6 " >
+				Stay Connected:
+			</div ><!-- column one end -->
+			<div id="socialMediaDiv" class="col-md-6 col-sm-6  col-xs-12">
+				<a  href="https://www.facebook.com/liliya.artyukh" >
+					<div id="socialMediaIconsF" class="SMicon">
+						<img id="facebookVisible" class="img-responsive" src="images/faceBook_darkBlue.png" />
+						<img id="facebookHidden" class="img-responsive" src="images/faceBook_darkBrown.png" />
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" >
+					<div id="socialMediaIconsL" class="SMicon">
+						<img id="linkedinVisible" class="img-responsive" src="images/linkedIn_darkBlue.png" />
+						<img id="linkedinHidden" class="img-responsive" src="images/linkedIn_darkBrown.png" />
+					</div>
+				</a>
+				<a href="https://plus.google.com/u/0/" >
+					<div id="socialMediaIconsG" class="SMicon">
+						<img id="googleVisible" class="img-responsive" src="images/google_darkBlue.png" />
+						<img id="googleHidden" class="img-responsive" src="images/google_darkBrown.png" />
+					</div>
+				</a>
+			</div><!-- column two end -->
+		</div>
+		<div id="siteView" class="row">
+			<form action="myMobileSite/index.html" method="GET">
+				<input type="submit" value="View Mobile Site" id="viewMobile">
+			</form>
+		</div>
+</div>
 <!--      pre footer end       -->
 <!--      site map start       -->
 <div>
-<div id="footerSiteMap" class="collapse navbar-collapse">
-<div id="SiteMapContainer">
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="AboutMe.html">About me</a></li>
- <li ><a class="SiteMapSubTitle" href="AboutMe.html#educationSection">Education</a></li>
- <li><a class="SiteMapSubTitle" href="AboutMe.html#experienceSection">Experience</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="Portfolio.html">Portfolio</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">Java</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">C#</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#webProjectsSection">Web</a></li>
-  <li  ><a class="SiteMapSubTitle" href="Portfolio.html#dataProjectSection">Data</a></li>
- <li ><a class="SiteMapSubTitle" href="Portfolio.html">Technical Documentation</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="Services.html">Services</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Data and Reporting</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Database Development</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Programming</a></li>
-  <li ><a  class="SiteMapSubTitle" href="Services.html">Testing</a></li>
-  <li ><a  class="SiteMapSubTitle" href="Services.html">Project Management</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="https://github.com/liliya0artyuh">GitHub</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="ContactMe.html">Contact me</a></li>
-  <li  ><a  class="SiteMapSubTitle" href="ContactMe.html">E-mail</a></li>
- <li ><a  class="SiteMapSubTitle" href="ContactMe.html">Phone</a></li>
- <li ><a  class="SiteMapSubTitle" href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic">LinkedIn</a></li>
-</ul>
-</div></div></div>
-<div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div>
+
+
+
+	<div id="footerSiteMap" class="collapse navbar-collapse">
+		<div id="SiteMapContainer">
+			<div>
+				<ul style="list-style-type:none">
+					<li><a class="footerM" href="AboutMe.html">About me</a></li>
+					<li ><a class="SiteMapSubTitle" href="AboutMe.html#educationSection">Education</a></li>
+					<li><a class="SiteMapSubTitle" href="AboutMe.html#experienceSection">Experience</a></li>
+				</ul>
+			</div><!-- about me column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="Portfolio.html">Portfolio</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">Java</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">C#</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#webProjectsSection">Web</a></li>
+					  <li  ><a class="SiteMapSubTitle" href="Portfolio.html#dataProjectSection">Data</a></li>
+					 <li ><a class="SiteMapSubTitle" href="Portfolio.html">Technical Documentation</a></li>
+				</ul>
+			</div><!-- portfolio column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="Services.html">Services</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Data and Reporting</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Database Development</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Programming</a></li>
+					  <li ><a  class="SiteMapSubTitle" href="Services.html">Testing</a></li>
+					  <li ><a  class="SiteMapSubTitle" href="Services.html">Project Management</a></li>
+				</ul>
+			</div><!-- services column -->
+			<div>
+				<ul style="list-style-type:none">
+					<li><a class="footerM" href="https://github.com/liliya0artyuh">GitHub</a></li>
+				</ul>
+			</div><!-- github column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="ContactMe.html">Contact me</a></li>
+					 <li  ><a  class="SiteMapSubTitle" href="ContactMe.html">E-mail</a></li>
+					 <li ><a  class="SiteMapSubTitle" href="ContactMe.html">Phone</a></li>
+					 <li ><a  class="SiteMapSubTitle" href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic">LinkedIn</a></li>
+				</ul>
+			</div><!-- contact me column -->
+		</div><!-- siteMapContiner end -->
+	</div><!-- footerSiteMap column -->
+
+	<div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div>
 </div>
 <!--     sitemap start       -->
 <!--      tools start       -->
 <div id="footer" >
-<div id="tools">
-<p>Tools used to create this website:<br/>
-HTML, CSS, Bootstrap, jQuery</p>
-</div>
-<!--    tools start       -->
+	<div id="tools">
+		<p>Tools used to create this website:<br/>
+		HTML, CSS, Bootstrap, jQuery</p>
+	</div><!--    tools end       -->
 </div>
 <!--                 footer end                -->
 
@@ -194,5 +237,5 @@ HTML, CSS, Bootstrap, jQuery</p>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="scripts/portfolioJQuery.js"></script>
+
 </html>

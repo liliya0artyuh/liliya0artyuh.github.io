@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="scripts/styles.css">
 </head>
 
-<body>
+<body onload="main();">
 
 <!--               header section  start            -->
 <!--               navigation bar section  start            -->
@@ -93,68 +93,90 @@
 
 <!--                 footer start                -->
 <!--      pre footer start       -->
-<div id="preFooter" >
-<div id="stayConnected">
-<div id="stayConnectedText" class="collapse navbar-collapse" >Stay Connected:</div>
-<div class="SMicon"><a id="socialMediaIconsF" href="https://www.facebook.com/liliya.artyukh" ><img src="images/faceBook_darkBlue.png"></a></div>
-<div class="SMicon"><a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" id="socialMediaIconsL"><img id="linkedIn" src="images/linkedIn_darkBlue.png"></a></div>
-<div  class="SMicon"><a href="https://plus.google.com/u/0/" id="socialMediaIconsG"><img src="images/google_darkBlue.png"></a></div>
-</div></div>
+<div id="preFooter" class="container-fluid">
+		<div id="stayConnected" class="row">
+			<div id="stayConnectedText" class="col-md-6  col-sm-6 " >
+				Stay Connected:
+			</div ><!-- column one end -->
+			<div id="socialMediaDiv" class="col-md-6 col-sm-6  col-xs-12">
+				<a  href="https://www.facebook.com/liliya.artyukh" >
+					<div id="socialMediaIconsF" class="SMicon">
+						<img id="facebookVisible" class="img-responsive" src="images/faceBook_darkBlue.png" />
+						<img id="facebookHidden" class="img-responsive" src="images/faceBook_darkBrown.png" />
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" >
+					<div id="socialMediaIconsL" class="SMicon">
+						<img id="linkedinVisible" class="img-responsive" src="images/linkedIn_darkBlue.png" />
+						<img id="linkedinHidden" class="img-responsive" src="images/linkedIn_darkBrown.png" />
+					</div>
+				</a>
+				<a href="https://plus.google.com/u/0/" >
+					<div id="socialMediaIconsG" class="SMicon">
+						<img id="googleVisible" class="img-responsive" src="images/google_darkBlue.png" />
+						<img id="googleHidden" class="img-responsive" src="images/google_darkBrown.png" />
+					</div>
+				</a>
+			</div><!-- column two end -->
+		</div>
+</div>
 <!--      pre footer end       -->
 <!--      site map start       -->
 <div>
-<div id="footerSiteMap" class="collapse navbar-collapse">
-<div id="SiteMapContainer">
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="AboutMe.html">About me</a></li>
- <li ><a class="SiteMapSubTitle" href="AboutMe.html#educationSection">Education</a></li>
- <li><a class="SiteMapSubTitle" href="AboutMe.html#experienceSection">Experience</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="Portfolio.html">Portfolio</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">Java</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">C#</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#webProjectsSection">Web</a></li>
-  <li  ><a class="SiteMapSubTitle" href="Portfolio.html#dataProjectSection">Data</a></li>
- <li ><a class="SiteMapSubTitle" href="Portfolio.html">Technical Documentation</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="Services.html">Services</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Data and Reporting</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Database Development</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Programming</a></li>
-  <li ><a  class="SiteMapSubTitle" href="Services.html">Testing</a></li>
-  <li ><a  class="SiteMapSubTitle" href="Services.html">Project Management</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="https://github.com/liliya0artyuh">GitHub</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="ContactMe.html">Contact me</a></li>
- <li  ><a  class="SiteMapSubTitle" href="#">E-mail</a></li>
- <li ><a  class="SiteMapSubTitle" href="#">Phone</a></li>
- <li ><a  class="SiteMapSubTitle" href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic">LinkedIn</a></li>
-</ul>
-</div></div></div>
-<div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div>
+	<div id="footerSiteMap" class="collapse navbar-collapse">
+		<div id="SiteMapContainer">
+			<div>
+				<ul style="list-style-type:none">
+					<li><a class="footerM" href="AboutMe.html">About me</a></li>
+					<li ><a class="SiteMapSubTitle" href="AboutMe.html#educationSection">Education</a></li>
+					<li><a class="SiteMapSubTitle" href="AboutMe.html#experienceSection">Experience</a></li>
+				</ul>
+			</div><!-- about me column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="Portfolio.html">Portfolio</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">Java</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">C#</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#webProjectsSection">Web</a></li>
+					  <li  ><a class="SiteMapSubTitle" href="Portfolio.html#dataProjectSection">Data</a></li>
+					 <li ><a class="SiteMapSubTitle" href="Portfolio.html">Technical Documentation</a></li>
+				</ul>
+			</div><!-- portfolio column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="Services.html">Services</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Data and Reporting</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Database Development</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Programming</a></li>
+					  <li ><a  class="SiteMapSubTitle" href="Services.html">Testing</a></li>
+					  <li ><a  class="SiteMapSubTitle" href="Services.html">Project Management</a></li>
+				</ul>
+			</div><!-- services column -->
+			<div>
+				<ul style="list-style-type:none">
+					<li><a class="footerM" href="https://github.com/liliya0artyuh">GitHub</a></li>
+				</ul>
+			</div><!-- github column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="ContactMe.html">Contact me</a></li>
+					 <li  ><a  class="SiteMapSubTitle" href="ContactMe.html">E-mail</a></li>
+					 <li ><a  class="SiteMapSubTitle" href="ContactMe.html">Phone</a></li>
+					 <li ><a  class="SiteMapSubTitle" href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic">LinkedIn</a></li>
+				</ul>
+			</div><!-- contact me column -->
+		</div><!-- siteMapContiner end -->
+	</div><!-- footerSiteMap column -->
+
+	<div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div>
 </div>
 <!--     sitemap start       -->
 <!--      tools start       -->
 <div id="footer" >
-<div id="tools">
-<p>Tools used to create this website:<br/>
-HTML, CSS, Bootstrap, jQuery</p>
-</div>
-<!--    tools start       -->
+	<div id="tools">
+		<p>Tools used to create this website:<br/>
+		HTML, CSS, Bootstrap, jQuery</p>
+	</div><!--    tools end       -->
 </div>
 <!--                 footer end                -->
 

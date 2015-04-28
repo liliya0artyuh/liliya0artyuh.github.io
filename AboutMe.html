@@ -21,25 +21,30 @@
 
 <nav  id="topNavBar" class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
-   <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-            <a id="linkToSite" href="index.html" ><div id="siteName">
-		   <div id="logoBig" ><img id="logoImage" src="images/logo_small.png"/></div><p id="myName">Liliya Artyukh</p>
-    </div></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="AboutMe.html">About Me</a></li>
-        <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="https://github.com/liliya0artyuh">GitHub</a></li>
-        <li><a href="Services.html">Services</a></li>
-      </ul>
-    </div>
+	   <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a id="linkToSite" href="index.html" >
+					<div id="siteName">
+						<div id="logoBig" >
+							<img id="logoImage" src="images/logo_small.png"/>
+						</div>
+						<p id="myName">Liliya Artyukh</p>
+					</div>
+				</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="AboutMe.html">About Me</a></li>
+					<li><a href="Portfolio.html">Portfolio</a></li>
+					<li><a href="https://github.com/liliya0artyuh">GitHub</a></li>
+					<li><a href="Services.html">Services</a></li>
+			  </ul>
+		</div>
   </div>
 </nav>
 
@@ -48,150 +53,188 @@
 <div id="contactMe"><div><p><a id="contactLink" href="ContactMe.html">Contact me</a></p></div></div>
 
 <!--               title header section  start            -->
-<div id="mainHeader">
+<header class="container-fluid" id="mainHeader">
   <h1 id="bannerTitle">About Me</h1>
   <p>Software Developer</p>
-</div>
+</header>
 <!--               title header section  end            -->
 
 <!--               header section   end           -->
 
 
 <!--                 content 1 start                -->
-<div id="AboutMeSection">
-<div id="AboutMeContainer">
-  <div class="photoDiv" class="col-md-4">
-  <img id="MyPhoto"  src="images/myphoto.png">
-  </div>
-  <div id="shortBio" class="col-md-8">
-     <h2>Liliya Artyukh</h2>
-       <p>Mature Centennial College Software Engineering student in 3rd year of program</p>
-    <p>University educated, former business founder embarking on career change</p>
-    <br />
-    <br />
-        <a id="resume" href="images/LiliyaArtyukhresumeJan2015.doc"><h6>Download my resume</h6></a>
-  </div>
-
-</div>
+<div id="AboutMeSection" class="container">
+	<div class="row" >
+  		<div class="col-md-3  col-md-offset-2 col-sm-3  col-sm-offset-2 ">
+  			<img   class="img-responsive"  src="images/myphoto1.png">
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+     		<h2>Liliya Artyukh</h2>
+       		<p>Mature Centennial College Software Engineering student in 3rd year of program</p>
+    		<p>University educated, former business founder embarking on career change</p>
+   		 	<br />
+    		<br />
+        	<a id="resume" href="images/LiliyaArtyukhresumeJan2015.doc"><h6>Download my resume</h6></a>
+  		</div>
+	</div>
 </div>
 <!--                 content 1 end                -->
 
 <div class="sectionSeparator"></div>
 
 <!--                 content 2 start                -->
-
 <div id="educationSection">
-<h2>Education</h2>
-<div id="educationContainer">
-<div class="educationDivs" ><a id="univInfo" href="http://www.ablaikhan.kz/en/our-university/facultets-and-departments/faculty-of-foreign-languages.html" ><img  src="images/univ_front.png"></a></div>
-<div class="educationDivsMiddle" ></div>
-<div class="educationDivs" ><a id="collegeInfo" href="http://www.centennialcollege.ca/programs-courses/full-time/software-engineering-technology-coop/" ><img  src="images/college_front.png"></a></div>
-</div><!-- end of educational container   -->
+	<div id="educationContainer" class="container">
+		<div class="row" >
+			<div class=" headingLiliya col-md-12" >
+				<h2>Education</h2>
+			</div>
+		</div>
+
+		<div class="row" >
+			<div  class="col-md-4 col-md-offset-1  col-sm-12">
+				<a  target="_blank" href="http://www.ablaikhan.kz/en/our-university/facultets-and-departments/faculty-of-foreign-languages.html" >
+					<div id="univInfo">
+						<img  id="univVisible"  class="img-responsive"  src="images/univ_front.png" />
+						<img  id="univHidden" class="img-responsive"  src="images/univ_back.png" />
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-md-offset-2  col-sm-12">
+				<a target="_blank" href="http://www.centennialcollege.ca/programs-courses/full-time/software-engineering-technology-coop/" >
+					<div id="collegeInfo">
+						<img  id="collegeVisible" class="img-responsive" src="images/college_front.png" />
+						<img  id="collegeHidden" class="img-responsive"  src="images/college_back.png"  />
+					</div>
+				</a>
+			</div>
+		</div>
+	</div><!-- end of educational container   -->
+
 </div><!-- end of educational section   -->
 <!--                 content 2 end                -->
 
 <div class="sectionSeparator"></div>
 
 <!--                 content 3 start                -->
-<div id="experienceSection">
-   <h2>Related Experience</h2>
-   <div id="hiddenImages">
-   <div class="hiddenDetails" id="javaDetails"><img src="images/javadetails.png"></div>
-   <div  class="hiddenDetails" id="dataDetails"><img src="images/datadetails.png"></div>
-   <div  class="hiddenDetails" id="docDetails"><img src="images/docdetails.png"></div>
-   <div class="hiddenDetails"  id="webDetails"><img src="images/webdetails.png"></div>
-   <div class="hiddenDetails"  id="testDetails"><img src="images/testdetails.png"></div>
-   <div class="hiddenDetails"  id="csharpDetails"><img src="images/csdetails.png"></div>
-</div>
-<div id="experienceContainer">
+<div  class="container" id="experienceSection">
+	<div class="row" >
+		<div class=" headingLiliya col-md-12" >
+			<h2>Related Experience</h2>
+		</div>
+	</div>
 
-<div class="experienceRow">
+   <div class="row" id="hiddenImages">
+	   <div class=" col-md-10 col-md-offset-2  " hidden class="hiddenDetails" id="javaDetails"><img class="img-responsive" src="images/javadetails.png"></div>
+	   <div class=" col-md-10 col-md-offset-2 " hidden class="hiddenDetails" id="dataDetails"><img class="img-responsive" src="images/datadetails.png"></div>
+	   <div class=" col-md-10 col-md-offset-2 " hidden class="hiddenDetails" id="docDetails"><img class="img-responsive" src="images/docdetails.png"></div>
+	   <div class=" col-md-10 col-md-offset-2 " hidden class="hiddenDetails"  id="webDetails"><img class="img-responsive" src="images/webdetails.png"></div>
+	   <div class=" col-md-10 col-md-offset-2 " hidden class="hiddenDetails"  id="testDetails"><img class="img-responsive" src="images/testdetails.png"></div>
+	   <div class=" col-md-10 col-md-offset-2 " hidden class="hiddenDetails"  id="csharpDetails"><img class="img-responsive" src="images/csdetails.png"></div>
+	</div>
 
-<div class="experienceDiv"><a id="csharpEx"><img class="sizeOfIconsSM" src="images/CSlogo.png"></a></div>
+	<div >
+		<div class="row" >
+			<div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-4 " ><a id="csharpEx"><img class="sizeOfIconsSM img-responsive"  src="images/CSlogo.png"></a></div>
+			<div class="col-md-3 col-sm-4 col-xs-4 " ><a id="dataEx"><img class="sizeOfIconsSM img-responsive" src="images/datalogo.png"></a></div>
+			<div class="col-md-3 col-sm-4 col-xs-4 "><a id="webEx"><img class="sizeOfIconsSM img-responsive" src="images/weblogo.png"></a></div>
+		</div>
 
-  <div class="educationDivsMiddle" ></div>
-<div class="experienceDiv"><a id="dataEx"><img class="sizeOfIconsSM" src="images/datalogo.png"></a></div>
-
-  <div class="educationDivsMiddle" ></div>
-<div ><a id="webEx"><img class="sizeOfIconsSM" src="images/weblogo.png"></a></div>
-</div>
-
-<div class="experienceRow">
-<div class="experienceDiv"><a id="javaEx"><img class="sizeOfIconsSM" src="images/javalogo.png"></a></div>
-  <div class="educationDivsMiddle" ></div>
-<div class="experienceDiv" ><a id="docEx"><img class="sizeOfIconsSM" src="images/doclogo.png"></a></div>
-  <div class="educationDivsMiddle" ></div>
-<div class="experienceDiv" ><a id="testEx"><img class="sizeOfIconsSM" src="images/testlogo.png"></a></div>
-</div>
-
-</div>
+		<div  class="row" >
+			<div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-4 " ><a id="javaEx"><img class="sizeOfIconsSM img-responsive" src="images/javalogo.png"></a></div>
+			<div class="col-md-3 col-sm-4 col-xs-4 "  ><a id="docEx"><img class="sizeOfIconsSM img-responsive" src="images/doclogo.png"></a></div>
+			<div class="col-md-3 col-sm-4 col-xs-4 " ><a id="testEx"><img class="sizeOfIconsSM img-responsive" src="images/testlogo.png"></a></div>
+		</div>
+	</div>
 </div>
 <!--                 content 3 end                -->
 
 <!--                 footer start                -->
 <!--      pre footer start       -->
-<div id="preFooter" >
-<div id="stayConnected">
-<div id="stayConnectedText" class="collapse navbar-collapse" >Stay Connected:</div>
-<div class="SMicon"><a id="socialMediaIconsF" href="https://www.facebook.com/liliya.artyukh" ><img src="images/faceBook_darkBlue.png"></a></div>
-<div class="SMicon"><a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" id="socialMediaIconsL"><img id="linkedIn" src="images/linkedIn_darkBlue.png"></a></div>
-<div  class="SMicon"><a href="https://plus.google.com/u/0/" id="socialMediaIconsG"><img src="images/google_darkBlue.png"></a></div>
-</div></div>
+<div id="preFooter" class="container-fluid">
+		<div id="stayConnected" class="row">
+			<div id="stayConnectedText" class="col-md-6  col-sm-6 " >
+				Stay Connected:
+			</div ><!-- column one end -->
+			<div id="socialMediaDiv" class="col-md-6 col-sm-6  col-xs-12">
+				<a  href="https://www.facebook.com/liliya.artyukh" >
+					<div id="socialMediaIconsF" class="SMicon">
+						<img id="facebookVisible" class="img-responsive" src="images/faceBook_darkBlue.png" />
+						<img id="facebookHidden" class="img-responsive" src="images/faceBook_darkBrown.png" />
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" >
+					<div id="socialMediaIconsL" class="SMicon">
+						<img id="linkedinVisible" class="img-responsive" src="images/linkedIn_darkBlue.png" />
+						<img id="linkedinHidden" class="img-responsive" src="images/linkedIn_darkBrown.png" />
+					</div>
+				</a>
+				<a href="https://plus.google.com/u/0/" >
+					<div id="socialMediaIconsG" class="SMicon">
+						<img id="googleVisible" class="img-responsive" src="images/google_darkBlue.png" />
+						<img id="googleHidden" class="img-responsive" src="images/google_darkBrown.png" />
+					</div>
+				</a>
+			</div><!-- column two end -->
+		</div>
+</div>
 <!--      pre footer end       -->
 <!--      site map start       -->
 <div>
-<div id="footerSiteMap" class="collapse navbar-collapse">
-<div id="SiteMapContainer">
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="AboutMe.html">About me</a></li>
- <li ><a class="SiteMapSubTitle" href="AboutMe.html#educationSection">Education</a></li>
- <li><a class="SiteMapSubTitle" href="AboutMe.html#experienceSection">Experience</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="Portfolio.html">Portfolio</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">Java</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">C#</a></li>
- <li  ><a class="SiteMapSubTitle" href="Portfolio.html#webProjectsSection">Web</a></li>
-  <li  ><a class="SiteMapSubTitle" href="Portfolio.html#dataProjectSection">Data</a></li>
- <li ><a class="SiteMapSubTitle" href="Portfolio.html">Technical Documentation</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="Services.html">Services</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Data and Reporting</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Database Development</a></li>
- <li  ><a class="SiteMapSubTitle" href="Services.html">Programming</a></li>
-  <li ><a  class="SiteMapSubTitle" href="Services.html">Testing</a></li>
-  <li ><a  class="SiteMapSubTitle" href="Services.html">Project Management</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="https://github.com/liliya0artyuh">GitHub</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type:none">
- <li><a class="footerM" href="ContactMe.html">Contact me</a></li>
- <li  ><a  class="SiteMapSubTitle" href="ContactMe.html">E-mail</a></li>
- <li ><a  class="SiteMapSubTitle" href="ContactMe.html">Phone</a></li>
- <li ><a  class="SiteMapSubTitle" href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic">LinkedIn</a></li>
-</ul>
-</div></div></div>
-<div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div>
+	<div id="footerSiteMap" class="collapse navbar-collapse">
+		<div id="SiteMapContainer">
+			<div>
+				<ul style="list-style-type:none">
+					<li><a class="footerM" href="AboutMe.html">About me</a></li>
+					<li ><a class="SiteMapSubTitle" href="AboutMe.html#educationSection">Education</a></li>
+					<li><a class="SiteMapSubTitle" href="AboutMe.html#experienceSection">Experience</a></li>
+				</ul>
+			</div><!-- about me column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="Portfolio.html">Portfolio</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">Java</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#programmingProjectSection">C#</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Portfolio.html#webProjectsSection">Web</a></li>
+					  <li  ><a class="SiteMapSubTitle" href="Portfolio.html#dataProjectSection">Data</a></li>
+					 <li ><a class="SiteMapSubTitle" href="Portfolio.html">Technical Documentation</a></li>
+				</ul>
+			</div><!-- portfolio column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="Services.html">Services</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Data and Reporting</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Database Development</a></li>
+					 <li  ><a class="SiteMapSubTitle" href="Services.html">Programming</a></li>
+					  <li ><a  class="SiteMapSubTitle" href="Services.html">Testing</a></li>
+					  <li ><a  class="SiteMapSubTitle" href="Services.html">Project Management</a></li>
+				</ul>
+			</div><!-- services column -->
+			<div>
+				<ul style="list-style-type:none">
+					<li><a class="footerM" href="https://github.com/liliya0artyuh">GitHub</a></li>
+				</ul>
+			</div><!-- github column -->
+			<div>
+				<ul style="list-style-type:none">
+					 <li><a class="footerM" href="ContactMe.html">Contact me</a></li>
+					 <li  ><a  class="SiteMapSubTitle" href="ContactMe.html">E-mail</a></li>
+					 <li ><a  class="SiteMapSubTitle" href="ContactMe.html">Phone</a></li>
+					 <li ><a  class="SiteMapSubTitle" href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic">LinkedIn</a></li>
+				</ul>
+			</div><!-- contact me column -->
+		</div><!-- siteMapContiner end -->
+	</div><!-- footerSiteMap column -->
+
+	<div id="copyrightStatement">&copy Copyright Liliya Artyukh 2015</div>
 </div>
 <!--     sitemap start       -->
 <!--      tools start       -->
 <div id="footer" >
-<div id="tools">
-<p>Tools used to create this website:<br/>
-HTML, CSS, Bootstrap, jQuery</p>
-</div>
-<!--    tools start       -->
+	<div id="tools">
+		<p>Tools used to create this website:<br/>
+		HTML, CSS, Bootstrap, jQuery</p>
+	</div><!--    tools end       -->
 </div>
 <!--                 footer end                -->
 

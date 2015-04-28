@@ -1,415 +1,344 @@
-<!-- file name: index.html,  author: liliya artyukh, Portfolio Mobile website, 5 pages mobile web app-->
+  <!-- file name: index.html,  author: liliya artyukh, Portfolio Mobile website, 5 pages mobile web app-->
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Liliya Artyukh Portfolio</title>
-  <!-- the  things that jQuery Mobile needs to work -->
-    <link rel="stylesheet" href="jquery.mobile-1.4.2/themes/myTheme.css" />
+  <!DOCTYPE html>
+  <html>
+  <head>
+     <title>Liliya Artyukh Portfolio</title>
+     <!-- the  things that jQuery Mobile needs to work -->
+     <meta name="viewport" content="width=device-width"/>
+
      <link rel="stylesheet" href="jquery.mobile-1.4.2/themes/myTheme.css" />
-  <link rel="stylesheet" href="jquery.mobile-1.4.2/themes/jquery.mobile.icons.min.css" />
-   <link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.css" />
-      <link href="myScripts/sliderCSS.cs" rel="stylesheet" />
-    <link rel="myScripts/stylesheet" href="myMobileCSS.cs" />
-  <meta name="viewport" content="width=device-width"/>
-</head>
-<body>
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 
-<!-- pop up windows for details about projects-->
-<div id="csharpDetailsSlider" data-role="popup"  data-theme="b">
-<div data-role="content">
-<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-<h4>Bakery Inventory System</h4>
-<img src="images/bakery_logo.jpg" alt="" width="200">
-<ul>
-<li>An application that stores sales and inventory records in a database.
-</li><li>Users can add, delete, or update inventory and sales records.
-</li><li>Reports are produced based on the data stored in the database.
-</li>
-</ul>
-<p>Tools used: C#, MySQL</p>
-</div>
-</div>
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+         <!-- <link rel="stylesheet" href="jquery.mobile-1.4.2/themes/jquery.mobile.icons.min.css" />-->
+     <!-- <link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.css" /> -->
 
-
-<div id="nemWebDetailsSlider" data-role="popup"  data-theme="b">
-<div data-role="content">
-<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-<h4>NEM At Centennial</h4>
-<img src="images/nem.png" alt="" width="230">
-<ul>
-<li>A website used to promote National Engineering Month at Cenennial College.
-</li>
-</ul>
-<p>Tools used: Bootstrap, HTML, CSS, JavaScript</p>
-</div>
-</div>
-
-
-<div id="visaDetailsSlider" data-role="popup"  data-theme="b">
-<div data-role="content">
-<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-<h4>Visa Prepaid Card Analysis</h4>
-<img src="images/paySource.jpg" alt="" width="200">
-<ul>
-<li>Completed two projects for company Payment Source Inc. for their product Prepaid Visa Card.</li>
-<li>Both projects perform analysis of the data and produce necessary reports.</li>
-</ul>
-<p>Tools used: C#, Access, SQL</p>
-</div>
-</div>
-
-
-<div id="gameDetailsSlider" data-role="popup"  data-theme="b">
-<div data-role="content">
-<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-<h4>Catch The Monster</h4>
-<img src="images/pig.gif" alt="" width="30">
-<ul><li>A web game using canvas. A user has to click on the moster to catch him.</li>
-<li>The speed increases based on how many mosters are caught.</li></ul>
-<p>Tools used: HTML, CSS, JavaScript</p>
-</div>
-</div>
-
-<!--pop up windows end here -->
-
-  <!-- home page start -->
-  <div data-role="page" id="home" data-theme="c">
-    <div data-role="header" >
-      <div class="centerLiliya" data-controltype="image">
-        <img style="width: 50px; height: px" src="images/logo_small.png">
-</div>
-      <h1>LA Portfolio</h1>
-    </div>
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#home" class="ui-btn-active ui-state-persist"  data-icon="home">Home</a></li>
-        <li><a href="#about" data-icon="user" >About Me</a></li>
-        <li><a href="#contact" data-icon="mail">Contact Me</a></li>
-      </ul>
-    </div>
-    <section role="main" class="ui-content">
-      <!-- ------------home content start--------------- -->
-      <div class="ui-grid-a">
-        <div class="ui-block-a" >
-          <a href="#projects" >
-            <div style="width: 90%; h eight: 85px; p osition: relative;  ">
-              <img src="images/projects31.png" alt="Projects" style="p osition: absolute; ">
-            </div>
-          </a>
-        </div>
-        <div class="ui-block-b" >
-          <a href="#services" data-controltype="image">
-            <div style="width: 90%; h eight: 85px; p osition: relative;  ">
-              <img src="images/services31.png" alt="Services" style="p osition: absolute;">
-            </div>
-          </a>
-        </div>
-
-         <center><h4>Featured Projects</h4></center>
-		            <div id="slider">
-		                <a href="#visaDetailsSlider">
-		                    <img id="visaImg" src="images/Slide9.png" data-plugin-slide-caption="Visa Prepaid Project">
-		                </a>
-		                <a href="#nemWebDetailsSlider">
-		                    <img id="nemImg" src="images/Slide10.png" data-plugin-slide-caption="NEM AT CENTENNIAL WEBSITE" />
-		                </a>
-		                <a href="#csharpDetailsSlider">
-		                    <img id="csharpImage" src="images/Slide11.png" data-plugin-slide-caption="C# Project" />
-		                </a>
-		                <a href="#gameDetailsSlider">
-		                    <img id="gameImage" src="images/Slide12.png" data-plugin-slide-caption="Web Game" />
-		                </a>
-		            </div>
-		            <!--#endregion-->
+     <link rel="stylesheet" href="myScripts/myMobileCSS.css" />
+   <link  rel="stylesheet" href="myScripts/sliderCSS.css" />
+  </head>
+  <body onload="main();" class="ui-body-f my-breakpoint">
 
 
 
-      </div>
-
-      <!-- -----------end ---------------- -->
-    </section>
-    <div data-role="footer"  data-position="fixed">
-      <div data-controltype="textblock" >
-        <h6 class="centerLiliya">
-          <a data-mce-href="http://www.nematcentennial.ca" href="http://studentweb.cencol.ca/lartyukh/"
-          target="_blank">
-          Open Desktop Version
-          </a>
-        </h6>
-        <p class="centerLiliya" ><span style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span></p>
-      </div>
-    </div>
-  </div>
-  <!-- home page end -->
-
-
-
-  <!-- about page start -->
-  <div data-role="page" id="about" data-theme="c">
-    <div data-role="header">
-      <div class="centerLiliya" data-controltype="image">
-        <img style="width: 50px; height: px" src="images/logo_small.png">
-      </div>
-      <h1>About Me</h1>
-      <a  class="ui-btn   ui-icon-back ui-btn-right ui-corner-all ui-btn-icon-notext" data-rel="back">Back</a>
-    </div>
-    <div data-role="navbar">
-      <ul>
-        <li><a href="#home"  data-icon="home">Home</a></li>
-        <li><a href="#about" data-icon="user" class="ui-btn-active ui-state-persist"  >About Me</a></li>
-        <li><a href="#contact" data-icon="mail">Contact Me</a></li>
-      </ul>
-    </div>
-    <!-- ------------about content start--------------- -->
-    <div class="ui-grid-a">
-      <div class="ui-block-a">
-        <div data-controltype="image" class="centerLiliya">
-         <img style="width: 90%; height: px; margin-top: 25px;" src="images/myphoto.PNG">
-       </div>
-     </div>
-
-     <div class="ui-block-b">
-      <div data-controltype="textblock">
-        <h4>
-          Liliya Artyukh
-        </h4>
-        </div>
-        <div>
-        <span style="font-size: small;"> <address>
-          <p><b>Building quality, user-friendly tools that provide convenience in daily tasks.</b>
-          </p> </address>
-            </div>   </div>
-
-
-          <div id="separatorDiv"></div>
-
-
-          <div data-role="collapsible">
-<h1>Who am I?</h1>
-          <span style="font-size: small;">
-            <p>
-            Mature Centennial College Software Engineering student in 3rd year of
-            program
-          </p>
-        </span>
-        <span style="font-size: small;">
-          <p>
-            University educated, former business founder embarking on career change
-          </p>
-        </span>
-        </div>
-  </div>
-         <div data-role="collapsible">
-<h1>Most Recent Projects</h1>
-    <div data-controltype="textblock">
-      <p>
-        Feb 2015, A website for Student's Club at Centennial.
-        <a href="http://nematcentennial.ca/">
-          www.nematcentennial.ca
-        </a>
-      </p>
-      <p>
-        <a href="http://nematcentennial.ca/">
-        </a>
-        Dec 2014, A C# application for Finance team at Payment Source Inc.
-      </p>
-    </div>
-  </div>
-    <!-- -----------end ---------------- -->
-    <div data-role="footer"data-position="fixed">
-     <div data-controltype="textblock">
-       <p class="centerLiliya" ><span style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span></p>
-     </div>
-   </div>
- </div>
- <!-- about page end -->
-
- <!-- contact page start -->
- <div data-role="page" id="contact" data-theme="c">
-  <div data-role="header">
-    <div class="centerLiliya" data-controltype="image">
-      <img style="width: 50px; height: px" src="images/logo_small.png">
-    </div>
-    <h1>Contact Me</h1>
-    <a class="ui-btn ui-icon-back ui-btn-right ui-corner-all ui-btn-icon-notext" data-rel="back">Back</a>
-  </div>
-  <div data-role="navbar">
-    <ul>
-      <li><a href="#home"  data-icon="home">Home</a></li>
-      <li><a href="#about" data-icon="user" >About Me</a></li>
-      <li><a href="#contact" class="ui-btn-active ui-state-persist"   data-icon="mail">Contact Me</a></li>
-    </ul>
-  </div>
-
-  <div data-role="content">
-    <!-- -----------------contact me content start ---------------------- -->
-
-	            <div class="ui-corner-all custom-corners">
-	            <div class="ui-bar ui-bar-b">
-	                <h1>Contact Info</h1>
-	                </div>
-	                <div class="ui-body ui-body-a">
-	                <p><b>Email:</b> myEmailAddress@gmail.com</p>
-	                <p><b>Tel:</b> <a href="tel: +16477858459" >+1 647 785 8459</a></p>
-	                </div>
-            </div>
- <div id="socialMediaGrid" class="ui-grid-d">
-            <div class="ui-block-a">
-            </div>
-
-        </div>
-
-        <div class="ui-grid-d">
-            <div class="ui-block-a">
-            </div>
-            <div class="ui-block-b" class="centerLiliya" >
-             <a  data-shadow="false"   data-theme="none" href="https://www.facebook.com/liliya.artyukh"  id="FacebookSocialMediaLink">
-			  			        <img src="images/faceBook_darkBlue.png" w idth="26" h eight="26" border="0" >
-  			      </a>
-            </div>
-            <div class="ui-block-c" class="centerLiliya">
-              <a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" data-theme="" id="LinkedInSocialMediaLink">
-			  			        <img src="images/linkedIn_darkBlue.png" w idth="26" h eight="26" border="0">
-  			      </a>
-            </div>
-            <div class="ui-block-d" class="centerLiliya">
-                  <a href="https://plus.google.com/u/0/" id="googleSocialMediaLink" data-theme="" id="ventaOption">
-			  				  			        <img src="images/google_darkBlue.png" w idth="26" h eight="26" border="0">
-			      </a>
-            </div>
-            <div class="ui-block-e">
-            </div>
-        </div>
-    <!-- -------------------end-------------------- -->
-  </div>
-  <div data-role="footer" data-position="fixed">
-    <div data-controltype="textblock">
-      <p class="centerLiliya" ><span style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span></p>
-    </div>
-  </div>
-  </div>
-    <!-- contact page end -->
-
-    <!-- projects page start -->
-    <div data-role="page" id="projects" data-theme="c">
-      <div data-role="header">
-        <div class="centerLiliya"  data-controltype="image">
+<!-- home page start -->
+<div data-role="page" id="home" data-theme="c">
+      <!--  header for home page  -->
+      <div data-role="header" >
+        <div  data-controltype="image">
           <img style="width: 50px; height: px" src="images/logo_small.png">
         </div>
-        <h1>Projects</h1>
-        <a  class="ui-btn ui-icon-back ui-btn-right ui-corner-all ui-btn-icon-notext"  data-rel="back">Back</a>
+        <h1>LA Portfolio</h1>
       </div>
+
+      <!--   header end -->
+      <!--  nav bar for home page  -->
       <div data-role="navbar">
         <ul>
-          <li><a href="#home"  data-icon="home">Home</a></li>
-          <li><a href="#about" data-icon="user"  >About Me</a></li>
+          <li><a href="#home" class="ui-btn-active ui-state-persist"  data-icon="home">Home</a></li>
+          <li><a href="#about" data-icon="user" >About Me</a></li>
           <li><a href="#contact" data-icon="mail">Contact Me</a></li>
         </ul>
       </div>
-      <!-- ------------projects content start--------------- -->
-       <div id="socialMediaGrid" class="ui-grid-a">
-	              <div class="ui-block-a">
-	                    <div class="centerLiliya" data-controltype="image">
-				          <a href="#csharpDetails" data-rel="popup" href="page-transitions-dialog.php"  data-transition="flip" ><img style="width: 165px; height: px" src="images/bakeryApp.PNG"></a>
-     </div>
-	              </div>
-	              <div class="ui-block-b">
-	                    <div class="centerLiliya" data-controltype="image">
-				         <a href="#nemWebDetails" data-rel="popup" href="page-transitions-dialog.php"  data-transition="flip" ><img style="width: 165px; height: px" src="images/nemWebsite.PNG"></a>
-     </div>
-	              </div>
-	          </div>
-	          <div class="ui-grid-a">
-	              <div class="ui-block-a">
-	                    <div class="centerLiliya" data-controltype="image">
-				        <a href="#visaDetails" data-rel="popup" href="page-transitions-dialog.php"  data-transition="flip" ><img style="width: 165px; height: px" src="images/paymentSource.PNG"></a>
-     </div>
-	              </div>
-	              <div class="ui-block-b">
-	                 <div class="centerLiliya" data-controltype="image">
-			   		 <a href="#gameDetails" data-rel="popup" href="page-transitions-dialog.php"  data-transition="flip" > <img style="width: 165px; height: px" src="images/monsterGame.PNG"></a>
-     </div>
-	              </div>
-	          </div>
+      <!-- nov bar end   -->
+      <section role="main" class="ui-content">
+        <!-- ------------home content start--------------- -->
+        <!--  two image buttons  -->
+        <div class="ui-grid-a">
+          <div class="ui-block-a" >
+            <a href="#projects" >
+              <div class="centerLiliya" data-controltype="image" style="w idth: 90%; h eight: 85px; p osition: relative;  ">
+                <img src="images/projects31.png" alt="Projects" style="p osition: absolute; ">
+              </div>
+            </a>
+          </div>
+          <div class="ui-block-b" >
+            <a href="#services" data-controltype="image">
+              <div class="centerLiliya" data-controltype="image" style="w idth: 90%; h eight: 85px; p osition: relative;  ">
+                <img src="images/services31.png" alt="Services" style="p osition: absolute;">
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--   two image buttons end -->
+        <!-- slider on home page   -->
+        <center><h4>Featured Projects</h4></center>
+        <div id="slider" >
+          <a href="#visaDetailsSlider" data-rel="popup"   data-position-to="window" data-transition="flip" >
+            <img id="visaImg" style="width: 331px; height: px"  src="images/Slide9.png" data-plugin-slide-caption="Visa Prepaid Project">
+          </a>
+          <a href="#nemWebDetailsSlider" data-rel="popup"   data-position-to="window" data-transition="flip"  >
+            <img id="nemImg" style="width: 331px; height: px"  src="images/Slide10.png" data-plugin-slide-caption="NEM AT CENTENNIAL WEBSITE" />
+          </a>
+          <a href="#csharpDetailsSlider" data-rel="popup"  data-position-to="window" data-transition="flip" >
+            <img id="csharpImage" style="width: 331px; height: px"  src="images/Slide11.png" data-plugin-slide-caption="C# Project" />
+          </a>
+          <a href="#gameDetailsSlider" data-rel="popup"   data-position-to="window" data-transition="flip" >
+            <img id="gameImage" style="width: 331px; height: px"  src="images/Slide12.png" data-plugin-slide-caption="Web Game" />
+          </a>
+        </div>
+        <!--  slider end  -->
+
+        <!-- pop up windows for details about projects-->
+        <div id="csharpDetailsSlider"   data-role="popup"  data-theme="c">
+         <div data-role="content">
+           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+           <h4>Bakery Inventory System</h4>
+           <img src="images/bakery_logo.jpg" alt="" width="200">
+           <ul>
+             <li>An application that stores sales and inventory records in a database.</li>
+             <li>Users can add, delete, or update inventory and sales records.</li>
+             <li>Reports are produced based on the data stored in the database.</li>
+       	   </ul>
+       	   <p>Tools used: C#, MySQL</p>
+          </div>
+        </div>
 
 
-	          <!-- pop up windows for details about projects-->
-			  <div id="csharpDetails" data-role="popup"  data-theme="b">
-			  <div data-role="content">
-			  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-			  <h4>Bakery Inventory System</h4>
-			  <img src="images/bakery_logo.jpg" alt="" width="200">
-			  <ul>
-			  <li>An application that stores sales and inventory records in a database.
-			  </li><li>Users can add, delete, or update inventory and sales records.
-			  </li><li>Reports are produced based on the data stored in the database.
-			  </li>
-			  </ul>
-			  <p>Tools used: C#, MySQL</p>
-			  </div>
-			  </div>
+        <div id="nemWebDetailsSlider" data-role="popup"   data-theme="c">
+          <div data-role="content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h4>NEM At Centennial</h4>
+            <img src="images/nem.png" alt="" width="230">
+            <ul>
+              <li>A website used to promote National Engineering Month at Cenennial College.</li>
+              <li><a href="http://nematcentennial.ca/"> nematcentennial.ca</a></li>
+            </ul>
+            <p>Tools used: Bootstrap, HTML, CSS, JavaScript</p>
+          </div>
+        </div>
 
 
-			  <div id="nemWebDetails" data-role="popup"  data-theme="b">
-			  <div data-role="content">
-			  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-			  <h4>NEM At Centennial</h4>
-			  <img src="images/nem.png" alt="" width="230">
-			  <ul>
-			  <li>A website used to promote National Engineering Month at Cenennial College.
-			  </li>
-			  </ul>
-			  <p>Tools used: Bootstrap, HTML, CSS, JavaScript</p>
-			  </div>
-			  </div>
+        <div id="visaDetailsSlider" data-role="popup"  data-theme="c">
+          <div data-role="content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h4>Visa Prepaid Card Analysis</h4>
+            <img src="images/paySource.jpg" alt="" width="200">
+            <ul>
+              <li>Completed two projects for company Payment Source Inc. for their product Prepaid Visa Card.</li>
+              <li>Both projects perform analysis of the data and produce necessary reports.</li>
+            </ul>
+             <p>Tools used: C#, Access, SQL</p>
+          </div>
+        </div>
 
 
-			  <div id="visaDetails" data-role="popup"  data-theme="b">
-			  <div data-role="content">
-			  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-			  <h4>Visa Prepaid Card Analysis</h4>
-			  <img src="images/paySource.jpg" alt="" width="200">
-			  <ul>
-			  <li>Completed two projects for company Payment Source Inc. for their product Prepaid Visa Card.</li>
-			  <li>Both projects perform analysis of the data and produce necessary reports.</li>
-			  </ul>
-			  <p>Tools used: C#, Access, SQL</p>
-			  </div>
-			  </div>
+        <div id="gameDetailsSlider" data-role="popup"  data-theme="c">
+          <div data-role="content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h4>Catch The Monster</h4>
+            <img src="images/pig.gif" alt="" width="30">
+            <ul>
+              <li>A web game using canvas. A user has to click on the moster to catch him.</li>
+              <li>The speed increases based on how many mosters are caught.</li>
+            </ul>
+            <p>Tools used: HTML, CSS, JavaScript</p>
+          </div>
+        </div>
 
-
-			  <div id="gameDetails" data-role="popup"  data-theme="b">
-			  <div data-role="content">
-			  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-			  <h4>Catch The Monster</h4>
-			  <img src="images/pig.gif" alt="" width="30">
-			  <ul><li>A web game using canvas. A user has to click on the moster to catch him.</li>
-			  <li>The speed increases based on how many mosters are caught.</li></ul>
-			  <p>Tools used: HTML, CSS, JavaScript</p>
-			  </div>
-			  </div>
-
-<!--pop up windows end here -->
+     <!--pop up windows end here -->
      <!-- -----------end ---------------- -->
+   </section>
+   <!--  footer for home page  -->
+        <div data-role="footer"  data-position="fixed">
+			<div id="siteView" class="row centerLiliya">
+				<form action="http://studentweb.cencol.ca/lartyukh/portfolioWebsite/index.html"  data-ajax="false" method="GET">
+				 	<input id="boolScript" type="text" data-role="none"name="isComingFromMobile" value="true">
+					<button type="submit" value="View Full Site" id="viewFull">View Full Site</button>
+				</form>
+			</div>
+			<div  id="copyFooter" data-controltype="textblock" >
+				<span    style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span>
+			</div>
+        </div>
+  <!-- footer end   -->
+</div>
+<!-- home page end -->
 
-     <div data-role="footer"data-position="fixed">
+
+
+<!-- about page start -->
+<div data-role="page" id="about" data-theme="c">
+  <!--  header for about me page   -->
+  <div data-role="header">
+    <div data-controltype="image">
+      <img style="width: 50px; height: px" src="images/logo_small.png">
+    </div>
+    <h1>About Me</h1>
+    <a  class="ui-btn   ui-icon-back ui-btn-right ui-corner-all ui-btn-icon-notext" data-rel="back">Back</a>
+  </div>
+  <!-- header end   -->
+  <!-- nav bar start   -->
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home"  data-icon="home">Home</a></li>
+      <li><a href="#about" data-icon="user" class="ui-btn-active ui-state-persist"  >About Me</a></li>
+      <li><a href="#contact" data-icon="mail">Contact Me</a></li>
+    </ul>
+  </div>
+  <!--  nav bar end  -->
+
+  <section role="main" class="ui-content">
+      <!-- ------------about content start--------------- -->
+      <!-- photo and tagline   -->
+      <div class="ui-grid-a">
+        <div class="ui-block-a">
+          <div data-controltype="image" class="centerLiliya">
+           <img style="width: 90%; height: px; margin-top: 25px;" src="images/myphoto.PNG">
+         </div>
+       </div>
+
+       <div class="ui-block-b">
+        <div data-controltype="textblock">
+          <h4>
+            Liliya Artyukh
+          </h4>
+        </div>
+           <div data-controltype="textblock">
+          <span style="font-size: small;"> <address>
+            <p><b>Building quality, user-friendly tools that provide convenience in daily tasks.</b>
+            </p> </address>
+          </div>
+        </div>
+        </div>
+        <!--  photo and tag line ends  -->
+
+        <!--  short bio   -->
+        <div data-role="collapsible">
+          <h1>Who am I?</h1>
+          <span style="font-size: small;">
+            <p>
+              Mature Centennial College Software Engineering student in 3rd year of program
+            </p>
+          </span>
+          <span style="font-size: small;">
+            <p>
+              University educated, former business founder embarking on career change
+            </p>
+          </span>
+        </div>
+        <!--  bio ends  -->
+
+        <!--  recent proj  -->
+        <div data-role="collapsible">
+          <h1>Most Recent Projects</h1>
+          <div data-controltype="textblock">
+            <p>
+              Feb 2015, A website for Student's Club at Centennial.
+              <a href="http://nematcentennial.ca/">
+                nematcentennial.ca
+              </a>
+            </p>
+            <p>
+              <a href="http://nematcentennial.ca/">
+              </a>
+              Dec 2014, A C# application for Finance team at Payment Source Inc.
+            </p>
+          </div>
+          </div>
+          <!--  recent proj ends  -->
+
+          <!-- -----------end ---------------- -->
+        </section><!--content end -->
+        <!--  footer for about starts  -->
+        <div data-role="footer" data-position="fixed">
+         <div data-controltype="textblock">
+           <p class="centerLiliya" ><span style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span></p>
+         </div>
+       </div>
+       <!--  footer ends  -->
+     </div>
+     <!-- about page end -->
+
+     <!-- contact page start -->
+     <div data-role="page" id="contact" data-theme="c">
+       <!--  header for contact me  -->
+       <div data-role="header">
+        <div data-controltype="image">
+          <img style="width: 50px; height: px" src="images/logo_small.png">
+        </div>
+        <h1>Contact Me</h1>
+        <a class="ui-btn ui-icon-back ui-btn-right ui-corner-all ui-btn-icon-notext" data-rel="back">Back</a>
+      </div>
+      <!--  header end  -->
+      <!--  navbar for contact me  -->
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home"  data-icon="home">Home</a></li>
+          <li><a href="#about" data-icon="user" >About Me</a></li>
+          <li><a href="#contact" class="ui-btn-active ui-state-persist"   data-icon="mail">Contact Me</a></li>
+        </ul>
+      </div>
+      <!--  navbar ends  -->
+
+      <section role="main" class="ui-content">
+          <!-- -----------------contact me content start ---------------------- -->
+          <!--  contact info section  -->
+          <div class="ui-corner-all custom-corners">
+           <div class="ui-bar ui-bar-b">
+             <h1>Contact Info</h1>
+           </div>
+           <div class="ui-body ui-body-a">
+             <p><b>Email:</b> myEmailAddress@gmail.com</p>
+             <p><b>Tel:</b> <a href="tel: +16477858459" >+1 647 785 8459</a></p>
+           </div>
+         </div>
+         <!-- contact info ends   -->
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+
+         <!-- social media links   -->
+         <div id="socialMediaGrid" class="ui-grid-d">
+          <div class="ui-block-a">
+          </div>
+          <div class="ui-block-b" class="centerLiliya" >
+           <a  data-shadow="false"   data-theme="none" href="https://www.facebook.com/liliya.artyukh"  id="FacebookSocialMediaLink">
+            <img src="images/faceBook_darkBlue.png" w idth="26" h eight="26" border="0" >
+          </a>
+        </div>
+        <div class="ui-block-c" class="centerLiliya">
+          <a href="https://www.linkedin.com/profile/view?id=54876155&trk=nav_responsive_tab_profile_pic" data-theme="" id="LinkedInSocialMediaLink">
+            <img src="images/linkedIn_darkBlue.png" w idth="26" h eight="26" border="0">
+          </a>
+        </div>
+        <div class="ui-block-d" class="centerLiliya">
+          <a href="https://plus.google.com/u/0/" id="googleSocialMediaLink" data-theme="" id="ventaOption">
+            <img src="images/google_darkBlue.png" w idth="26" h eight="26" border="0">
+          </a>
+        </div>
+        <div class="ui-block-e">
+        </div>
+      </div>
+      <!--  social media ends  -->
+      <!-- -------------------end-------------------- -->
+    </section>
+    <!--  footer contact me  -->
+    <div data-role="footer" data-position="fixed">
       <div data-controltype="textblock">
         <p class="centerLiliya" ><span style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span></p>
       </div>
     </div>
+    <!--  footer ends  -->
   </div>
-  <!-- projects page end -->
+  <!-- contact page end -->
 
-  <!-- services page start -->
-  <div data-role="page" id="services" data-theme="c">
+
+  <!-- projects page start -->
+  <div data-role="page" id="projects" data-theme="c">
+    <!--  header for projects  -->
     <div data-role="header">
-      <div class="centerLiliya" data-controltype="image">
+      <div   data-controltype="image">
         <img style="width: 50px; height: px" src="images/logo_small.png">
       </div>
-      <h1>Services</h1>
-      <a class="ui-btn ui-icon-back ui-btn-right ui-corner-all ui-btn-icon-notext" data-rel="back">Back</a>
+      <h1>Projects</h1>
+      <a  class="ui-btn ui-icon-back ui-btn-right ui-corner-all ui-btn-icon-notext"  data-rel="back">Back</a>
     </div>
+    <!--  header ends  -->
+    <!-- navbar for projects   -->
     <div data-role="navbar">
       <ul>
         <li><a href="#home"  data-icon="home">Home</a></li>
@@ -417,66 +346,190 @@
         <li><a href="#contact" data-icon="mail">Contact Me</a></li>
       </ul>
     </div>
-    <!-- ------------services content start--------------- -->
-<div class="ui-content">
-            <p>Available Services:</p>
-            <div data-role="collapsible-set">
-                <div data-role="collapsible" id="dataService">
-                <h1>Database Development</h1>
-              				               <ul>
-							                    <li>Designing Database</li>
-							                    <li>Building Database</li>
-							                    <li>Managing Database</li>
-							                    </ul>
-                    <p>Skills: Relational Databases, Oracle, MS SQL Server</p>
+    <!-- navbar ends   -->
 
-
-                </div>
-                <div data-role="collapsible">
-                    <h1>Data Mining</h1>
-                    <ul>
-							                    <li>
-                    <p>Producing Reports</p>
-                    </li>
-							                    </ul>
-                    <p>Skills: SQL Queries</p>
-                </div>
-                <div data-role="collapsible">
-                    <h1>Programming Applications</h1>
-                     <ul>
-							                    <li>
-                    <p>Developing Destop Applications</p>
-                    </li>
-							                    </ul>
-                    <p>Skills: Java, C#</p>
-                </div>
-                <div data-role="collapsible">
-                    <h1>Web Development</h1>
-                     <ul>
-							                    <li>
-                    <p>Developing Websites</p>
-                    </li>
-							                    </ul>
-                    <p>Skills: HTML, CSS, JavaScript</p>
-                </div>
-            </div>
+    <section role="main" class="ui-content">
+      <!-- ------------projects content start--------------- -->
+      <!--  volunteer projects  -->
+      <h3 class="ui-bar ui-bar-c">Work/Volunteer Projetcs</h3>
+      <div id="socialMediaGrid" class="ui-grid-a">
+       <div class="ui-block-a">
+        <div class="centerLiliya" data-controltype="image">
+          <a href="#visaDetails" data-rel="popup" href="page-transitions-dialog.php"  data-position-to="window" data-transition="flip" ><img style="width: 150px; height: px" src="images/paymentSource.PNG"></a>
         </div>
+      </div>
+      <div class="ui-block-b">
+       <div class="centerLiliya" data-controltype="image">
+         <a href="#nemWebDetails" data-rel="popup" href="page-transitions-dialog.php"   data-position-to="window" data-transition="flip" ><img style="width: 150px; height: px" src="images/nemWebsite.PNG"></a>
+       </div>
+     </div>
+   </div>
+   <!--  volunteer ends  -->
+   <!-- school projects   -->
+   <h3 class="ui-bar ui-bar-c">School Projetcs</h3>
+   <div class="ui-grid-a">
+     <div class="ui-block-a">
+      <div class="centerLiliya" data-controltype="image">
+        <a href="#csharpDetails" data-rel="popup" href="page-transitions-dialog.php"   data-position-to="window" data-transition="flip" ><img style="width: 150px; height: px" src="images/bakeryApp.PNG"></a>
+      </div>
 
-   <!-- -----------end ---------------- -->
-
-   <div data-role="footer"data-position="fixed">
-    <div data-controltype="textblock">
-     <p class="centerLiliya"><span style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span></p>
+    </div>
+    <div class="ui-block-b">
+      <div class="centerLiliya" data-controltype="image">
+       <a href="#gameDetails" data-rel="popup" href="page-transitions-dialog.php"   data-position-to="window" data-transition="flip" > <img style="width: 150px; height: px" src="images/monsterGame.PNG"></a>
+     </div>
    </div>
  </div>
+ <!--  school projects ends  -->
+ <!-- pop up windows for details about projects-->
+ <div id="csharpDetails"  data-role="popup" data-theme="c">
+   <div data-role="content">
+     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <h4>Bakery Inventory System</h4>
+     <img src="images/bakery_logo.jpg" alt="" width="200">
+     <ul>
+       <li>An application that stores sales and inventory records in a database.
+       </li><li>Users can add, delete, or update inventory and sales records.
+     </li><li>Reports are produced based on the data stored in the database.
+   </li>
+ </ul>
+ <p>Tools used: C#, MySQL</p>
+</div>
+</div>
+
+
+<div id="nemWebDetails"  data-role="popup"  data-theme="c">
+ <div data-role="content">
+   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <h4>NEM At Centennial</h4>
+   <img src="images/nem.png" alt="" width="230">
+   <ul>
+     <li>A website used to promote National Engineering Month at Cenennial College.
+     </li>
+     <li><a href="http://nematcentennial.ca/"> nematcentennial.ca
+     </a></li>
+   </ul>
+   <p>Tools used: Bootstrap, HTML, CSS, JavaScript</p>
+ </div>
+</div>
+
+
+<div id="visaDetails" data-role="popup"  data-theme="c">
+ <div data-role="content">
+   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <h4>Visa Prepaid Card Analysis</h4>
+   <img src="images/paySource.jpg" alt="" width="200">
+   <ul>
+     <li>Completed two projects for company Payment Source Inc. for their product Prepaid Visa Card.</li>
+     <li>Both projects perform analysis of the data and produce necessary reports.</li>
+   </ul>
+   <p>Tools used: C#, Access, SQL</p>
+ </div>
+</div>
+
+
+<div id="gameDetails"  data-role="popup"  data-theme="c">
+ <div data-role="content">
+   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <h4>Catch The Monster</h4>
+   <img src="images/pig.gif" alt="" width="30">
+   <ul><li>A web game using canvas. A user has to click on the moster to catch him.</li>
+     <li>The speed increases based on how many mosters are caught.</li></ul>
+     <p>Tools used: HTML, CSS, JavaScript</p>
+   </div>
+ </div>
+
+ <!--pop up windows end here -->
+</section>
+<!-- -----------end ---------------- -->
+
+<!--  footer for projects  -->
+<div data-role="footer"data-position="fixed">
+  <div data-controltype="textblock">
+    <p class="centerLiliya" ><span style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span></p>
+  </div>
+</div>
+<!--  footer ends  -->
+</div>
+<!-- projects page end -->
+
+<!-- services page start -->
+<div data-role="page" id="services" data-theme="c">
+  <div data-role="header">
+    <div  data-controltype="image">
+      <img style="width: 50px; height: px" src="images/logo_small.png">
+    </div>
+    <h1>Services</h1>
+    <a class="ui-btn ui-icon-back ui-btn-right ui-corner-all ui-btn-icon-notext" data-rel="back">Back</a>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home"  data-icon="home">Home</a></li>
+      <li><a href="#about" data-icon="user"  >About Me</a></li>
+      <li><a href="#contact" data-icon="mail">Contact Me</a></li>
+    </ul>
+  </div>
+
+  <section role="main" class="ui-content">
+    <!-- ------------services content start--------------- -->
+    <p>Available Services:</p>
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" id="dataService">
+        <h1>Database Development</h1>
+        <ul>
+         <li>Designing Database</li>
+         <li>Building Database</li>
+         <li>Managing Database</li>
+       </ul>
+       <p>Skills: Relational Databases, Oracle, MS SQL Server</p>
+     </div>
+
+
+     <div data-role="collapsible">
+      <h1>Data Mining</h1>
+      <ul>
+       <li>
+        <p>Producing Reports</p>
+      </li>
+    </ul>
+    <p>Skills: SQL Queries</p>
+  </div>
+  <div data-role="collapsible">
+    <h1>Programming Applications</h1>
+    <ul>
+     <li>
+      <p>Developing Destop Applications</p>
+    </li>
+  </ul>
+  <p>Skills: Java, C#</p>
+</div>
+<div data-role="collapsible">
+  <h1>Web Development</h1>
+  <ul>
+   <li>
+    <p>Developing Websites</p>
+  </li>
+</ul>
+<p>Skills: HTML, CSS, JavaScript</p>
+</div>
+</div>
+</section>
+<!-- -----------end ---------------- -->
+
+<div data-role="footer" data-position="fixed">
+  <div data-controltype="textblock">
+   <p class="centerLiliya"><span style="font-size: xx-small;"> &#169; Copyright Liliya Artyukh 2015</span></p>
+ </div>
+</div>
 </div>
 <!-- services page end -->
 
 <!-- javaScripts -->
-  <script src="myScripts/jquery-1.11.0.js" type="text/javascript"></script>
-  <script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.js" type="text/javascript"></script>
-  <script src="myScripts/jQueryMyMobileSite.js" type="text/javascript"></script>
-   <script src="myScripts/sliderScipt.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- <script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.js" type="text/javascript"></script> -->
+<script src="myScripts/jQueryMyMobileSite.js" ></script>
+<script src="myScripts/sliderScript.js" ></script>
 </body>
 </html>

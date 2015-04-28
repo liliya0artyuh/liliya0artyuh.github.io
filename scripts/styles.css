@@ -3,9 +3,13 @@
 
 /*-------------------- global style start------------------*/
 body {
+background-color: #EDEDED;
 b order: solid 1px red;
 }
 
+*{
+b order: solid 1px blue;
+}
 
 .sectionSeparator{
  clear: both;
@@ -126,17 +130,18 @@ padding: 0 0;
 /*--------------------------------------------------------------------------------------- footer start --------------------------- */
 
 #preFooter {
-clear: both;
+b order: solid 1px blue;
+c lear: both;
 background-color: black; #3D494C  ; /*#025D79;*/
-height: 60px;
+height: auto;
+min-height: 90px;
 }
 
 /*------------ STAY Connected div links  start - --------------*/
 #stayConnected { 
-b order: solid 1px red;
-margin-left: auto;
-marging-right: auto;
-width: 65%;
+height: auto;
+width: auto;
+margin: 0 auto;
 }
 
 #stayConnected div{
@@ -144,43 +149,38 @@ float: left;
 }
 
 #stayConnectedText{
+b order: solid 1px green;
+text-align: right;
 padding-top: 22px;
 color: #CCCCCC;
 }
 
 .SMicon{
-width:48px;
-height:48px;
+b order: solid 1px green;
+m ax-width:48px;
+max-height:48px;
+width: auto;
+height: auto;
 margin-left: 10px;
 margin-right: 10px;
 margin-top: 5px;
-display: block;
-text-indent: -99999px;
+margin-bottom: 5px;
 }
 
-#socialMediaIconsF:link {
-background: url("../images/faceBook_darkBlue.png");
-display: block;
+#facebookHidden  {
+display: none;
 }
-#socialMediaIconsF:hover{
-background: url("../images/faceBook_darkBrown.png");
-background-position: 0 0;
+#linkedinHidden {
+display: none;
 }
-#socialMediaIconsL:link{
-background-image: url("../images/linkedIn_darkBlue.png");
-display: block;
+#googleHidden{
+display: none;
 }
-#socialMediaIconsL:hover{
-background-image: url("../images/linkedIn_darkBrown.png");
-background-position: 0 0;
-}
-#socialMediaIconsG:link{
-background-image: url("../images/google_darkBlue.png");
-display: block;
-}
-#socialMediaIconsG:hover{
-background-image: url("../images/google_darkBrown.png");
-background-position: 0 0;
+
+#siteView {
+height: 10px;
+color: #CCCCCC;
+text-align: center;
 }
 /*------------ STAY Connected div links end- --------------*/
 
@@ -281,22 +281,18 @@ background-image: url("../images/code1.gif");
 
 
 #callToAction{
+margin-top: 10px;
     width: 151px;
     height: 74px;margin-left: 15%;
   background-image: url("../images/callToAction.gif") ;
-    b order: solid 2px red;
-    b ackground-color: yellow;
-    /* Rotate div */
-    -ms-transform: rotate(20deg); /* IE 9 */
-    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
-    transform: rotate(20deg); /* Standard syntax */
+
 }
 
 
 .carousel-inner{
-margin-left: auto;
-margin-right: auto;
-width: 50%;
+m argin-left: auto;
+m argin-right: auto;
+w idth: 50%;
 
 }
 #content3 {
@@ -332,8 +328,8 @@ marging-bottom: 80px;
 }
 
 #welcomeList{
-text-align: left;
-width: 100px;
+text-align: center;
+w idth: 100px;
 margin-left: auto;
 margin-right: auto;
 }
@@ -342,17 +338,23 @@ margin-right: auto;
 
 
 /*---- about me start --*/
+.headingLiliya {
+text-align: center;
+}
+
 #AboutMeSection{
-min-height: 320px;
+min-height: 220px;
 height: auto;
 margin-bottom: 20px;
 margin-top: 20px;
 }
+
 #AboutMeContainer{
 margin-left: auto;
 marging-right: auto;
-width: 75%;
+w idth: 75%;
 }
+
 #AboutMeContainer div{
 float:left;
 }
@@ -365,24 +367,28 @@ margin-bottom: 5px;
 #shortBio{
 text-align: left;
 }
-#MyPhoto{
+#M yPhoto{
 width: 270px;
 height: 324px;
 }
 
 
 #educationSection{
-text-align: center;
-height: 380px;
+b order: solid 1px blue;
+t ext-align: center;
+m in-height: 380px;
+h eight: auto;
 }
 #educationContainer{
-margin-left: auto;
-marging-right: auto;
-width: 75%;
+background-color: white;
+b order: solid 1px red;
+m argin-left: auto;
+m arging-right: auto;
+w idth: 75%;
 }
 #educationContainer div{
-margin-bottom: 10px;
-float: left;
+m argin-bottom: 10px;
+f loat: left;
 }
 .educationDivs educationDivsMiddle{
 m argin-top: 5px;
@@ -391,39 +397,59 @@ t ext-indent: -99999px;
 f loat:right;
 }
 .educationDivsMiddle{
-display: block;
+d isplay: block;
 text-indent: -99999px;
 width: 50px;
 height: 10px;
 }
 .educationDivs{
-display: block;
-text-indent: -99999px;
-width: 418px;
+d isplay: block;
+t ext-indent: -99999px;
+w idth: 418px;
 height: 313px;
 }
-#univInfo:link {
-background: url("../images/univ_front.png");
-display: block;
+#univInfo {
+b ackground: url("../images/univ_front.png");
+height: 313px;
+d isplay: block;
+b ackground-position: center; 
+  b ackground-repeat: no-repeat;
 }
 #univInfo:hover{
-background: url("../images/univ_back.png");
-background-position: 0 0;
+b ackground: url("../images/univ_back.png");
+b ackground-position: center; 
+  b ackground-repeat: no-repeat;
 }
-#collegeInfo:link {
-background: url("../images/college_front.png");
-display: block;
+#collegeInfo {
+b ackground: url("../images/college_front.png");
+height: 313px;
+d isplay: block;
+b ackground-position: center; 
+  b ackground-repeat: no-repeat;
 }
 #collegeInfo:hover{
-background: url("../images/college_back.png");
-background-position: 0 0;
+b ackground: url("../images/college_back.png");
+b ackground-position: center; 
+  b ackground-repeat: no-repeat;
 }
 
+#collegeHidden {
+display: none;
+}
+
+#univHidden {
+display: none;
+}
 #experienceSection{
+b order: solid 1px red;
 background-color: #EDEDED;
 text-align: center;
-height: 620px;
+min-height: 200px;
+height: auto;
+padding-top: 20px;
+padding-bottom: 20px;
 }
+
 #experienceContainer{
 margin-left: auto;
 marging-right: auto;
@@ -436,13 +462,12 @@ display: block;
 .experienceRow div{
 float: left;
 }
-/*---- about meend  ---*/
+/*---- about me end  ---*/
 /*--------------------------------------------------------------------------------- content end --------------------------- */
 
 
 
 .hiddenDetails {
-
   display: none;
 }
 
@@ -458,3 +483,8 @@ float: left;
     width: 300px;
 }
 
+/*--------------------------------------------------------------------------------- CSS for View Full Site --------------------------- */
+/* CSS for View Full Site */
+
+
+/*--------------------------------------------------------------------------------- CSS for View Full Site --------------------------- */

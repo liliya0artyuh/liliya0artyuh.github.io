@@ -1,0 +1,49 @@
+/* file name: myMobile.cs,  author: liliya artyukh, Portfolio Mobile website, 5 pages mobile web app */
+
+
+
+#socialMediaGrid{
+height: 120px;
+}
+
+#socialMediaGrid {
+margin-top: 5px;
+marging-bottom: 5px;
+}
+
+
+#separatorDiv{
+//clear: both;
+height: 30px;
+}
+
+.centerLiliya{
+ text-align: center;
+}
+
+#siteView {
+height: 25px;
+color: #CCCCCC;
+ text-align: left;
+border-style: none;
+border: 0;
+ padding-left: 5px;
+ padding-bottom: 5px;
+}
+
+#boolScript{
+display: none;
+border-style: none;
+border: 0;
+}
+
+#copyFooter {
+ text-align: right;
+ padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+form {
+border-style: none;
+border: 0;
+}
